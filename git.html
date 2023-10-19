@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get in Touch</title>
+    <link rel="stylesheet" href="git.css">
+</head>
+<body>
+    <div class="container">
+        <form onsubmit="sendEmail();reset();return false;">
+         <h3>GET IN TOUCH</h3>
+         <input type="text" id="name" placeholder="Name"> 
+         <input type="email" id="cand email" placeholder="Email"> 
+         <input type="email" id="email" placeholder="theeeeethereal@gmail.com">
+         <input type="text" id="phone" placeholder="Phone No."> 
+         <textarea  id="text" rows="10">How We Can Help You ! </textarea>
+         <button type="submit ">send</button>  
+        </form>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                 Host : "smtp.elasticemail.com",
+                 Username : "theeeeethereal@gmail.com",
+                 Password : "9FE9CA7BB26AA6B2E001FC3099D6B3C5B655",
+                 To : 'theeeeethereal@gmail.com',
+                 From : document.getElementById("email").value,
+                 Subject : "new contact form",
+                 Body : "Name: "+document.getElementById("name").value+
+                 "<br> Email: "+document.getElementById("cand email").value+
+                 "<br> Phone no.:  "+document.getElementById("phone").value+
+                 "<br> message:  "+document.getElementById("text").value
+
+                 
+
+                
+}).then(
+  message => alert(message)
+);
+}
+   
+</script>
+    
+</body>
+</html>

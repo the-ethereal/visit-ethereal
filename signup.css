@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url(newsign.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.sign-up-form{
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    background: #fff;
+    padding: 20px;
+    margin: 8% auto 0;
+}
+
+.sign-up-form h1{
+    color: #1c8adb;
+    margin-bottom: 30px;
+
+}
+
+.input-box{
+    border-radius: 20px;
+    padding: 5px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #999;
+    outline: none;
+}
+
+button{
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover{
+    background-color: #FF2511;
+    color: #fff;
+    font-size: 17px;
+
+}
+
+.signup-btn{
+    background-color: #1c8adb;
+}
+
+.google-acc{
+    background-color: #21afde;
+}
+
+a{
+    text-decoration: none;
+}
+
+hr{
+    margin-top: 20px;
+    width: 80%;
+}
+
+.or{
+    background: #fff;
+    width: 30px;
+    margin: -19px auto 10px;
+}
+
+img{
+    width: 70px;
+    margin-top: -50%;
+}
+
+form p a{
+    border-radius: 2px;
+    transition: 0.5s;
+
+}
+
+form p a:hover{
+    background-color: #765c48;
+    color: #fff;
+    
+}
